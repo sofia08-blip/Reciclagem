@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #c7f6c7; 
+    color: #2e3d2f; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #388e3c;
+    border-bottom: 2px solid #81c784;
+    padding-bottom: 5px;
+}
+
+main p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.destaque {
+    background-color: #e8f5e9;
+    border-left: 5px solid #66bb6a;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+.bloco {
+    background-color: #f9fff9; 
+    border: 1px solid #c8e6c9; 
+    border-radius: 8px; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.bloco h2 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+
+#bhrecicla {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 20px;               
+  flex-wrap: wrap;         
+  padding: 20px;           
+}
+
+
+#bhrecicla img {
+  width: 300px;   
+  height: auto;   
+  display: inline-block; 
+  border-radius: 8px;    
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+}
+
+
+@media (max-width: 700px) {
+  #bhrecicla img {
+    width: 100%;       
+    max-width: 420px;  
+  }
+}
+
+a button {
+
+  font-family:"Poppins", sans-serif;
+  background-color: #1a7635; 
+  color: white;
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
+  text-decoration: none;
+  
+}
+
+
+a {
+  text-decoration: none; 
+}
+
+
+a button:hover {
+  background-color: #1a7635;
+}
+
+.banner-principal {
+    
+    width: 100%; 
+    
+    height: auto; 
+    
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#cta {
+  background-color: #2e7d32; 
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 12px;
+}
+
+.botao-cta {
+  display: inline-block;
+  background-color: #81c784; 
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.botao-cta:hover {
+  background-color: #2e7d32; 
+}
