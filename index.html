@@ -19,23 +19,15 @@
   <a href="pages/Papelão.html">
     <button>Papelões</button>
   </a>
-  <main>
-    <section class="bloco">
-        <h2>IMPORTÂNCIA</h2>
-        <p>A reciclagem é um processo fundamental para a preservação do meio ambiente e a promoção de um futuro sustentável. Ela envolve a transformação de materiais descartados em novos produtos, reduzindo a necessidade de extração de recursos naturais, economizando energia e água, diminuindo a poluição e combatendo as mudanças climáticas. Além dos benefícios ambientais, a reciclagem também gera empregos e impulsiona a economia.</p>
-        <h2>METODOS</h2>
-        <p>Os métodos mais básicos de reciclagem envolvem a coleta seletiva, triagem, processamento e reutilização dos materiais recicláveis. A reciclagem mecânica, química e energética são os principais processos envolvidos, cada um com suas características e aplicações. </p>
-        <ul>
-            <li><h3>coleta seletiva</h3></li>
-            <p>A coleta seletiva é crucial para a reciclagem porque garante que os materiais recicláveis sejam separados corretamente, evitando a contaminação e facilitando o processo de transformação em novos produtos. Sem a coleta seletiva, materiais recicláveis podem acabar em aterros sanitários, poluindo o meio ambiente e desperdiçando recursos valiosos.</p>
-            <li><h3>triagem</h3></li>
-            <p>A triagem é crucial para a reciclagem porque garante que apenas materiais recicláveis adequados sejam encaminhados para o processamento, evitando contaminação e maximizando o aproveitamento dos recursos naturais. Sem uma triagem eficiente, a reciclagem se torna menos eficaz, resultando em perda de materiais valiosos e potencialmente contaminando outros resíduos.</p>
-            <li><h3>processo de reutilização</h3></li>
-            <p>A reutilização de materiais é crucial para a reciclagem porque prolonga a vida útil dos produtos, reduz a necessidade de extração de novos recursos naturais e a geração de resíduos, além de diminuir a poluição e os impactos ambientais associados à produção de novos itens.</p>
-        </ul>
-        </main>
-        <main>
-    <section class="bloco">
+  <p id="msg">Clique para ver uma dica de reciclagem.</p>
+<button onclick="dica()">Dica</button>
+<script>
+function dica() {
+  document.getElementById("msg").innerText = "Recicle plástico, papel e metal sempre que possível!";
+}
+</script>
+<main>
+<section class="bloco">
         <h2>O QUE FAZER QUANDO PRECISAR JOGAR FORA</h2>
         <p>Quando precisar descartar algo para reciclagem, o primeiro passo é identificar o tipo de material. Em seguida, separe os itens recicláveis dos não recicláveis (rejeitos). Os materiais recicláveis devem ser limpos e secos antes do descarte, e os rejeitos devem ser destinados à coleta urbana</p>
         <h3>ONGs perto da sua casa</h3>
@@ -44,13 +36,11 @@
         <a href="https://novalima.mg.gov.br/inicio/noticias/coleta_seletiva_de_nova_lima">Nova Lima</a>
         <a href="https://mapaosc.ipea.gov.br/detalhar/965773">Ribeirão das Neves</a>
     </main>
-
-    <div id="bhrecicla">
+<div id="bhrecicla">
         <img src="images/BH_recicla.jpg">
         <img src="images/CN_recicla.jpg">
         <img src="images/NV_recicla.jpg">
     </div>
-    
     <main>
     <section class="bloco">
         <h2>ESSAS ONGs SÃO CONFIAVEIS POIS</h2>
@@ -62,6 +52,38 @@
   <a href="#" class="botao-cta">Quero participar</a>
   </section>
     </main>
+     <div class="form-box">
+    <h2>Formulário</h2>
+
+    <label>Nome:</label>
+    <input type="text" id="nome">
+
+    <label>Idade:</label>
+    <input type="number" id="idade">
+
+    <button onclick="enviar()">Enviar</button>
+
+    <p id="resultado"></p>
+</div>
+
+<script>
+    function enviar() {
+        let nome = document.getElementById("nome").value;
+        let idade = document.getElementById("idade").value;
+        document.getElementById("resultado").innerText =
+            "Nome: " + nome + " | Idade: " + idade;
+    }
+</script>
+  <main>
+    <section class="bloco">
+        <h2>IMPORTÂNCIA</h2>
+        <p>A reciclagem é um processo fundamental para a preservação do meio ambiente e a promoção de um futuro sustentável. Ela envolve a transformação de materiais descartados em novos produtos, reduzindo a necessidade de extração de recursos naturais, economizando energia e água, diminuindo a poluição e combatendo as mudanças climáticas. Além dos benefícios ambientais, a reciclagem também gera empregos e impulsiona a economia.</p>
+        <h2>METODOS</h2>
+        <ul>
+            <li><h3>coleta seletiva</h3></li>
+            <li><h3>triagem</h3></li>
+            <li><h3>processo de reutilização</h3></li>
+        </ul>
+        </main>
     </body>
 </html>
-
