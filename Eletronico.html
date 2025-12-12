@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eletronico</title>
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <img src="../images/Pequena_verde.png"  class="banner-principal">
+  <h1>RECICLAGEM DE LIXO ELETRÔNICO</h1>
+  <a href="index.html">
+    <button>Pagina inicial</button>
+  </a>
+  <a href="../pages/Quimicos.html">
+    <button>Lixos Quimicos</button>
+  </a>
+  <a href="../pages/Papelão.html">
+    <button>Papelões</button>
+  </a>
+  <p id="msg">Clique para ver uma dica de reciclagem.</p>
+<button onclick="dica()">Dica</button>
+
+<script>
+function dica() {
+  document.getElementById("msg").innerText = "Nunca jogue eletrônicos no lixo comum. Leve celulares, carregadores, pilhas e aparelhos quebrados para pontos de coleta. Eles reaproveitam metais e evitam vazamento de substâncias tóxicas no solo";
+}
+</script>
+  <main>
+    <section class="bloco">
+  <h2>Reciclagens eletronica</h2>
+        <p>A reciclagem de eletrônicos, ou descarte eletrônico, é o processo de coletar e processar de forma segura equipamentos elétricos e eletrônicos obsoletos ou quebrados, com o intuito de recuperar materiais como plásticos e metais preciosos, além de descartar resíduos perigosos de maneira ambientalmente correta.</p>
+         <a href="https://bhrecicla.com.br/">Clique aqui para BH recicla</a>
+        <li><h3>Importância de reciclar eletrônicos</h3></li>
+        <ul> 
+           <li><p>Evita a contaminação por metais pesados como mercúrio, chumbo e cádmio que são tóxicos.</p></li> 
+           <li><p>Recupera materiais valiosos, reduzindo a necessidade de mineração e extração de novas matérias-primas.</p></li>
+           <li><p>Diminui a quantidade de resíduos enviados para aterros, o que é fundamental devido ao grande volume de e-lixo gerado </p></li>
+           <li><p>Os materiais reciclados voltam para a cadeia produtiva, gerando valor e impulsionando a sustentabilidade</p></li>
+        </ul>
+    </main>
+</body>
+</html>
